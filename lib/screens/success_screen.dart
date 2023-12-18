@@ -5,8 +5,17 @@ class SuccessScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Colors.purpleAccent,
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Color(0xffF20C7F),
+        centerTitle: true,
+        title: Text(
+          "Success Stories",
+          style: TextStyle(
+              fontSize: 25, fontWeight: FontWeight.bold, color: Colors.white),
+        ),
+      ),
+      backgroundColor: Color(0xffe7e0e3),
     );
   }
 }

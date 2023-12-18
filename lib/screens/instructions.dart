@@ -9,16 +9,19 @@ class InstructionsScreen extends StatelessWidget {
       child: Scaffold(
         appBar: AppBar(
           elevation: 0,
-          backgroundColor: Colors.white,
+          backgroundColor: Color(0xffF20C7F),
           title: Text(
             "Instructions",
             style: TextStyle(
-                fontSize: 22, fontWeight: FontWeight.bold, color: Colors.black),
+                fontSize: 25, fontWeight: FontWeight.bold, color: Colors.white),
           ),
         ),
         body: SingleChildScrollView(
           child: Column(children: [
-            Image.asset('assets/images/photo1.jpg'),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Image.asset('assets/images/photo1.jpg'),
+            ),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Text(
@@ -34,7 +37,7 @@ class InstructionsScreen extends StatelessWidget {
               child: Text(
                 'Early detection can save lives! Your life too',
                 style: TextStyle(
-                  color: Color(0xffe055a3),
+                  color: Color(0xffF20C7F),
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
                 ),
@@ -50,7 +53,11 @@ class InstructionsScreen extends StatelessWidget {
                 ),
               ),
             ),
-            Center(child: Image.asset('assets/images/photo2.jpg')),
+            Center(
+                child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Image.asset('assets/images/photo2.jpg'),
+            )),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Text(
@@ -66,13 +73,16 @@ class InstructionsScreen extends StatelessWidget {
               child: Text(
                 'But There is a Best Time to Check Yourself',
                 style: TextStyle(
-                  color: Color(0xffe055a3),
+                  color: Color(0xffF20C7F),
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
                 ),
               ),
             ),
-            Image.asset('assets/images/photo3.jpg'),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Image.asset('assets/images/photo3.jpg'),
+            ),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Text(
@@ -88,13 +98,16 @@ class InstructionsScreen extends StatelessWidget {
               child: Text(
                 'Special situation of breast cancer in men',
                 style: TextStyle(
-                  color: Color(0xffe055a3),
+                  color: Color(0xffF20C7F),
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
                 ),
               ),
             ),
-            Image.asset('assets/images/photo4.jpg'),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Image.asset('assets/images/photo4.jpg'),
+            ),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Text(
@@ -112,14 +125,16 @@ There are currently no guidelines for early detection. Moreover, men face a situ
               child: Text(
                 'Love your body',
                 style: TextStyle(
-                  color: Color(0xffe055a3),
+                  color: Color(0xffF20C7F),
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
                 ),
-                textAlign: TextAlign.start,
               ),
             ),
-            Image.asset('assets/images/photo5.jpg'),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Image.asset('assets/images/photo5.jpg'),
+            ),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Text(

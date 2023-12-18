@@ -1,8 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:guard/screens/about_us.dart';
 import 'package:guard/screens/calenders_period.dart';
 import 'package:guard/screens/checkup_screen.dart';
+import 'package:guard/screens/contactUs_screen.dart';
+import 'package:guard/screens/forgetPassword_screen.dart';
+import 'package:guard/screens/help_screen.dart';
 import 'package:guard/screens/instructions.dart';
+import 'package:guard/screens/problem_screen.dart';
 import 'package:guard/screens/register_screen.dart';
+import 'package:guard/screens/settings.dart';
 import 'package:guard/screens/success_screen.dart';
 import 'package:guard/taps/pages_screen.dart';
 
@@ -28,6 +34,12 @@ class MyApp extends StatelessWidget {
         CalenderPeriod.routeName: (context) => CalenderPeriod(),
         InstructionsScreen.routeName: (context) => InstructionsScreen(),
         PagesScreen.routeName: (context) => PagesScreen(),
+        AboutUs.routeName: (context) => AboutUs(),
+        ContactUsScreen.routeName: (context) => ContactUsScreen(),
+        GetHelp.routeName: (context) => GetHelp(),
+        Settings.routeName: (context) => Settings(),
+        ProblemScreen.routeName: (context) => ProblemScreen(),
+        ForgetPassword.routeName: (context) => ForgetPassword(),
       },
     );
   }

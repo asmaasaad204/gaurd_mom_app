@@ -199,7 +199,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 padding:
                     const EdgeInsets.symmetric(vertical: 20, horizontal: 80),
                 shape: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(30),
+                  borderRadius: BorderRadius.circular(25),
                   borderSide: BorderSide.none,
                 ),
                 onPressed: () {

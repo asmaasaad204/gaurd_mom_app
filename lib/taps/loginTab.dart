@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:guard/screens/forgetPassword_screen.dart';
 import 'package:guard/screens/register_screen.dart';
 
 import '../home/home_screen.dart';
@@ -93,8 +94,25 @@ class LoginTab extends StatelessWidget {
                   ),
                 ),
               ),
+              InkWell(
+                onTap: () {
+                  ///forget password
+                  Navigator.of(context)
+                      .pushReplacementNamed(ForgetPassword.routeName);
+                },
+                child: Container(
+                  child: Padding(
+                    padding: const EdgeInsets.only(
+                        left: 212, right: 8, top: 10, bottom: 8),
+                    child: Text(
+                      "Forget Password ?",
+                      style: TextStyle(color: Colors.black54, fontSize: 18),
+                    ),
+                  ),
+                ),
+              ),
               const SizedBox(
-                height: 30,
+                height: 55,
               ),
               MaterialButton(
                 elevation: 5.0,

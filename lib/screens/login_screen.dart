@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:guard/screens/forgetPassword_screen.dart';
 import 'package:guard/screens/register_screen.dart';
 
 import '../home/home_screen.dart';
@@ -27,9 +28,6 @@ class LoginScreen extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             children: <Widget>[
-              // const SizedBox(height: 20),
-
-              // padding: const EdgeInsets.all(8.0),
               Image.asset(
                 'assets/images/logo2.png',
                 width: 240,
@@ -93,8 +91,25 @@ class LoginScreen extends StatelessWidget {
                   ),
                 ),
               ),
+              InkWell(
+                onTap: () {
+                  ///forget password
+                  Navigator.of(context)
+                      .pushReplacementNamed(ForgetPassword.routeName);
+                },
+                child: Container(
+                  child: Padding(
+                    padding: const EdgeInsets.only(
+                        left: 212, right: 8, top: 10, bottom: 8),
+                    child: Text(
+                      "Forget Password ?",
+                      style: TextStyle(color: Colors.black54, fontSize: 18),
+                    ),
+                  ),
+                ),
+              ),
               const SizedBox(
-                height: 30,
+                height: 55,
               ),
               MaterialButton(
                 elevation: 5.0,
@@ -102,7 +117,7 @@ class LoginScreen extends StatelessWidget {
                 padding:
                     const EdgeInsets.symmetric(vertical: 20, horizontal: 80),
                 shape: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(30),
+                  borderRadius: BorderRadius.circular(25),
                   borderSide: BorderSide.none,
                 ),
                 onPressed: () {

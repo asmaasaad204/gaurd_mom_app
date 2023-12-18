@@ -64,11 +64,11 @@ class _HomeTapState extends State<HomeTap> {
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
                     primary: Color(0xffc9bdc6),
-                    onPrimary: Color(0xffF20C7F),
+                    onPrimary: Colors.white,
                     padding: EdgeInsets.only(
                         right: 20, left: 20, top: 12, bottom: 12),
                     shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(17))),
+                        borderRadius: BorderRadius.circular(15))),
                 onPressed: () {
                   Navigator.of(context).pushNamed(CheckUpScreen.routeName);
                 },

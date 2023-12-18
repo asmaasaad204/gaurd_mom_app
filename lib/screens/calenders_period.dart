@@ -144,7 +144,7 @@ class _CalenderPeriodState extends State<CalenderPeriod> {
                     child: TextField(
                       decoration: InputDecoration(
                         hintText: 'Describe menstrual color',
-                        prefixIcon: Icon(Icons.drive_file_rename_outline),
+                        prefixIcon: Icon(Icons.description),
                         enabledBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(20),
                             borderSide: BorderSide.none),
@@ -171,7 +171,7 @@ class _CalenderPeriodState extends State<CalenderPeriod> {
                     padding: const EdgeInsets.symmetric(
                         vertical: 20, horizontal: 80),
                     shape: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(30),
+                      borderRadius: BorderRadius.circular(20),
                       borderSide: BorderSide.none,
                     ),
                     onPressed: () {},
