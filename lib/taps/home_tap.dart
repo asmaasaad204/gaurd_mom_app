@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:guard/screens/instructions.dart';
+import 'package:guard/screens/risk_factors_screen.dart';
 import 'package:guard/screens/success_screen.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -205,7 +206,8 @@ class _HomeTapState extends State<HomeTap> {
                           child: InkWell(
                             onTap: () {
                               ///other ressourses
-                              showAlert(context);
+                              Navigator.of(context)
+                                  .pushNamed(RiskFactors.routeName);
                             },
                             child: Column(
                               children: [
@@ -225,7 +227,7 @@ class _HomeTapState extends State<HomeTap> {
                                 Padding(
                                   padding: const EdgeInsets.all(8.0),
                                   child: Text(
-                                    "Other Resourses",
+                                    "Risk Factors",
                                     style: TextStyle(fontSize: 15),
                                   ),
                                 )
@@ -245,43 +247,43 @@ class _HomeTapState extends State<HomeTap> {
     );
   }
 
-  void showAlert(BuildContext context) {
-    showDialog(
-      context: context,
-      builder: (BuildContext context) {
-        return AlertDialog(
-          title: Text('Connect with another source'),
-          content: InkWell(
-              onTap: () {
-                launchUrl;
-              },
-              child: Text('https://baheya.org/')),
-          actions: <Widget>[
-            TextButton(
-              onPressed: () {
-                Navigator.of(context).pop();
-              },
-              child: Text(
-                'OK',
-                style: TextStyle(
-                  color: Color(0xffF20C7F),
-                  fontSize: 18,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-            ),
-          ],
-        );
-      },
-    );
-  }
-
-  launchURL() async {
-    const url = 'https://baheya.org/';
-    if (await canLaunch(url)) {
-      await launch(url);
-    } else {
-      throw 'Could not launch $url';
-    }
-  }
+  // void showAlert(BuildContext context) {
+  //   showDialog(
+  //     context: context,
+  //     builder: (BuildContext context) {
+  //       return AlertDialog(
+  //         title: Text('Connect with another source'),
+  //         content: InkWell(
+  //             onTap: () {
+  //               launchUrl;
+  //             },
+  //             child: Text('https://baheya.org/')),
+  //         actions: <Widget>[
+  //           TextButton(
+  //             onPressed: () {
+  //               Navigator.of(context).pop();
+  //             },
+  //             child: Text(
+  //               'OK',
+  //               style: TextStyle(
+  //                 color: Color(0xffF20C7F),
+  //                 fontSize: 18,
+  //                 fontWeight: FontWeight.bold,
+  //               ),
+  //             ),
+  //           ),
+  //         ],
+  //       );
+  //     },
+  //   );
+  // }
+  //
+  // launchURL() async {
+  //   const url = 'https://baheya.org/';
+  //   if (await canLaunch(url)) {
+  //     await launch(url);
+  //   } else {
+  //     throw 'Could not launch $url';
+  //   }
+  // }
 }
