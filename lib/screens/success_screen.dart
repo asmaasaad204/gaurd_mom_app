@@ -7,7 +7,7 @@ class SuccessScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color(0xffF20C7F),
+        backgroundColor: Color(0xffF8CAE4),
         centerTitle: true,
         title: Text(
           "Success Stories",
