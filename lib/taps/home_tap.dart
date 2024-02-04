@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:guard/screens/instructions.dart';
 import 'package:guard/screens/risk_factors_screen.dart';
 import 'package:guard/screens/success_screen.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 import '../screens/calenders_period.dart';
 import '../screens/checkup_screen.dart';
@@ -33,7 +32,7 @@ class _HomeTapState extends State<HomeTap> {
             ),
           ),
         ),
-        backgroundColor: Color(0xffe7e0e3),
+        backgroundColor: Colors.white,
         body: Stack(
           children: [
             Center(

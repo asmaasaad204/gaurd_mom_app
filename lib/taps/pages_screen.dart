@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:guard/screens/about_us.dart';
 import 'package:guard/screens/calenders_period.dart';
 import 'package:guard/screens/help_screen.dart';
-import 'package:guard/screens/instructions.dart';
 import 'package:guard/screens/login_screen.dart';
 import 'package:guard/screens/register_screen.dart';
+import 'package:guard/screens/risk_factors_screen.dart';
 import 'package:guard/screens/settings.dart';
 import 'package:guard/taps/home_tap.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -214,7 +214,7 @@ class PagesScreen extends StatelessWidget {
             ),
             InkWell(
               onTap: () {
-                Navigator.of(context).pushNamed(InstructionsScreen.routeName);
+                Navigator.of(context).pushNamed(RiskFactors.routeName);
               },
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
@@ -225,9 +225,9 @@ class PagesScreen extends StatelessWidget {
                     padding:
                     const EdgeInsets.only(top: 10, bottom: 8, left: 10),
                     child: Text(
-                      "Instructions",
+                      "Risk Factors",
                       style:
-                      TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+                          TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
                     ),
                   ),
                   decoration: BoxDecoration(

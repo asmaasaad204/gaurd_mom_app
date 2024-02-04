@@ -8,6 +8,7 @@ class GetHelp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: Color(0xffF8CAE4),
         centerTitle: true,
@@ -18,11 +19,11 @@ class GetHelp extends StatelessWidget {
         ),
       ),
       body: Stack(children: [
-        Image.asset(
-          "assets/images/photo_58.jpg",
-          height: 757,
-          fit: BoxFit.fill,
-        ),
+        // Image.asset(
+        //   "assets/images/photo_58.jpg",
+        //   height: 757,
+        //   fit: BoxFit.fill,
+        // ),
         Column(
           children: [
             Padding(
@@ -56,7 +57,7 @@ class GetHelp extends StatelessWidget {
                 elevation: 5.0,
                 color: Color(0xffb0a3ab),
                 padding:
-                    const EdgeInsets.symmetric(vertical: 20, horizontal: 80),
+                const EdgeInsets.symmetric(vertical: 20, horizontal: 80),
                 shape: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(10),
                   borderSide: BorderSide.none,
@@ -98,7 +99,7 @@ class GetHelp extends StatelessWidget {
                   elevation: 5.0,
                   color: Color(0xffb0a3ab),
                   padding:
-                      const EdgeInsets.symmetric(vertical: 20, horizontal: 20),
+                  const EdgeInsets.symmetric(vertical: 20, horizontal: 20),
                   shape: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(10),
                     borderSide: BorderSide.none,
