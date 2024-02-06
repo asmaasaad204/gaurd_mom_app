@@ -136,7 +136,7 @@ class _HomeTapState extends State<HomeTap> {
                                   borderRadius: BorderRadius.circular(15),
                                   image: DecorationImage(
                                     image: AssetImage(
-                                      "assets/images/photo_up.jpg",
+                                      "assets/images/photo_09.jpg",
                                     ),
                                     fit: BoxFit.cover,
                                   ),
@@ -145,7 +145,7 @@ class _HomeTapState extends State<HomeTap> {
                               Padding(
                                 padding: const EdgeInsets.all(8.0),
                                 child: Text(
-                                  "Instructions",
+                                  "Other Resources",
                                   style: TextStyle(
                                     fontSize: 15,
                                   ),
@@ -204,7 +204,7 @@ class _HomeTapState extends State<HomeTap> {
                           padding: const EdgeInsets.only(left: 30),
                           child: InkWell(
                             onTap: () {
-                              ///other ressourses
+                              ///Risk factors
                               Navigator.of(context)
                                   .pushNamed(RiskFactors.routeName);
                             },
@@ -217,7 +217,7 @@ class _HomeTapState extends State<HomeTap> {
                                     borderRadius: BorderRadius.circular(15),
                                     image: DecorationImage(
                                       image: AssetImage(
-                                        "assets/images/photo_09.jpg",
+                                        "assets/images/photo_up.jpg",
                                       ),
                                       fit: BoxFit.cover,
                                     ),

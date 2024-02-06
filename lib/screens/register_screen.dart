@@ -15,7 +15,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar:  PreferredSize(
-        preferredSize: Size.fromHeight(250),
+        preferredSize: Size.fromHeight(240),
         child: AppBar(
           elevation: 0,
           backgroundColor: Colors.transparent,
@@ -75,11 +75,45 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     ),
                   ),
                 ),
-                SizedBox(
-                  height: 15,
+                const SizedBox(
+                  height: 10,
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(right: 10,left: 10),
+                  padding: const EdgeInsets.only(right: 10, left: 10),
+                  child: Container(
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        color: Color(0xdad2ced0)),
+                    child: TextField(
+                      decoration: InputDecoration(
+                        hintText: 'Gender',
+                        suffixIconColor: Colors.white,
+                        prefixIcon: const Icon(Icons.drive_file_rename_outline),
+                        enabledBorder: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(10),
+                            borderSide: const BorderSide(
+                              color: Colors.white,
+                            )),
+                        disabledBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(10),
+                          borderSide: const BorderSide(
+                            color: Colors.white,
+                            width: 10,
+                          ),
+                        ),
+                        focusedBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(10),
+                          borderSide: BorderSide(color: Colors.white),
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: 10,
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(right: 10, left: 10),
                   child: Container(
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
@@ -109,7 +143,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   ),
                 ),
                 SizedBox(
-                  height: 15,
+                  height: 10,
                 ),
                 Padding(
                   padding: const EdgeInsets.only(right: 10,left: 10),
@@ -143,7 +177,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   ),
                 ),
                 const SizedBox(
-                  height: 15,
+                  height: 10,
                 ),
                 Padding(
                   padding: const EdgeInsets.only(right: 10,left: 10),
@@ -177,7 +211,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   ),
                 ),
                 const SizedBox(
-                  height: 15,
+                  height: 10,
                 ),
                 Padding(
                   padding: const EdgeInsets.only(right: 10,left: 10),
@@ -211,7 +245,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   ),
                 ),
                 const SizedBox(
-                  height: 25,
+                  height: 20,
                 ),
                 MaterialButton(
                   elevation: 5.0,
@@ -223,7 +257,8 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     borderSide: BorderSide.none,
                   ),
                   onPressed: () {
-                    Navigator.of(context).pushNamed(HomeScreen.routeName);
+                    Navigator.of(context)
+                        .pushReplacementNamed(HomeScreen.routeName);
                   },
                   child: const Text(
                     'Sign Up',
@@ -235,7 +270,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   ),
                 ),
                 const SizedBox(
-                  height: 67,
+                  height: 35,
                 ),
                 GestureDetector(
                   child: Row(

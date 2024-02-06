@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:guard/screens/forgetPassword_screen.dart';
 import 'package:guard/screens/register_screen.dart';
+
 import '../home/home_screen.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -121,7 +122,8 @@ class LoginScreen extends StatelessWidget {
                         borderSide: BorderSide.none,
                       ),
                       onPressed: () {
-                        Navigator.of(context).pushNamed(HomeScreen.routeName);
+                        Navigator.of(context)
+                            .pushReplacementNamed(HomeScreen.routeName);
                       },
                       child: const Text(
                         'Login',

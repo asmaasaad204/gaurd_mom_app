@@ -28,7 +28,7 @@ class AboutUs extends StatelessWidget {
               ),
               child: Container(
                 width: 400,
-                height: 200,
+                height: 220,
                 child: Column(
                   children: [
                     Padding(
@@ -94,7 +94,7 @@ class AboutUs extends StatelessWidget {
               ),
               child: Container(
                 width: 400,
-                height: 200,
+                height: 220,
                 child: Column(
                   children: [
                     Padding(
@@ -158,7 +158,7 @@ class AboutUs extends StatelessWidget {
               ),
               child: Container(
                 width: 400,
-                height: 200,
+                height: 220,
                 child: Column(
                   children: [
                     Padding(
@@ -222,7 +222,7 @@ class AboutUs extends StatelessWidget {
               ),
               child: Container(
                 width: 400,
-                height: 200,
+                height: 220,
                 child: Column(
                   children: [
                     Padding(

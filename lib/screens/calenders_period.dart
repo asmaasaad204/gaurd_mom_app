@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../home/home_screen.dart';
+
 class CalenderPeriod extends StatefulWidget {
   static const String routeName = 'calender period';
 
@@ -13,39 +15,44 @@ class _CalenderPeriodState extends State<CalenderPeriod> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Color(0xffF20C7F),
-        appBar: AppBar(
-          elevation: 0,
-          // title: const Text('Calender Period',
-          //     style: TextStyle(
-          //       color: Color(0xffe055a3),
-          //       fontSize: 25,
-          //       fontWeight: FontWeight.bold,
-          //     )),
-          // centerTitle: true,
-          backgroundColor: Colors.transparent,
+        backgroundColor: Colors.white,
+        appBar: PreferredSize(
+          preferredSize: Size.fromHeight(270),
+          child: AppBar(
+            elevation: 0,
+            backgroundColor: Colors.transparent,
+            scrolledUnderElevation: 20,
+            flexibleSpace: Container(
+              child: Stack(
+                children: [
+                  Image.asset(
+                    "assets/images/photo_logiin9.jpg",
+                    fit: BoxFit.cover,
+                  ),
+                  Padding(
+                    padding:
+                        const EdgeInsets.only(top: 120, right: 120, left: 20),
+                    child: Image.asset(
+                      "assets/images/photo_logoGuuard2.jpg",
+                      width: 200,
+                      height: 100,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
         ),
         body: Container(
             padding: const EdgeInsets.symmetric(horizontal: 20),
             width: MediaQuery.of(context).size.width,
             child: SingleChildScrollView(
-                child: Column(children: <Widget>[
-              // const SizedBox(height: 20),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Image.asset(
-                  'assets/images/logo2.png',
-                  width: 240,
-                  height: 100,
-                ),
-              ),
-              SizedBox(height: 55),
-              Column(
+              child: Column(
                 children: [
                   Container(
                     decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(20),
-                        color: Colors.white),
+                        borderRadius: BorderRadius.circular(10),
+                        color: Color(0xdad2ced0)),
                     child: TextField(
                       decoration: InputDecoration(
                         hintText:
@@ -57,7 +64,7 @@ class _CalenderPeriodState extends State<CalenderPeriod> {
                           child: Icon(Icons.date_range),
                         ),
                         enabledBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(20),
+                            borderRadius: BorderRadius.circular(10),
                             borderSide: BorderSide.none),
                         disabledBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(20),
@@ -67,7 +74,7 @@ class _CalenderPeriodState extends State<CalenderPeriod> {
                           ),
                         ),
                         focusedBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(20),
+                          borderRadius: BorderRadius.circular(10),
                           borderSide: BorderSide.none,
                         ),
                       ),
@@ -78,8 +85,8 @@ class _CalenderPeriodState extends State<CalenderPeriod> {
                   ),
                   Container(
                     decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(20),
-                        color: Colors.white),
+                        borderRadius: BorderRadius.circular(10),
+                        color: Color(0xdad2ced0)),
                     child: TextField(
                       decoration: InputDecoration(
                         hintText:
@@ -90,17 +97,17 @@ class _CalenderPeriodState extends State<CalenderPeriod> {
                             },
                             child: Icon(Icons.date_range)),
                         enabledBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(20),
+                            borderRadius: BorderRadius.circular(10),
                             borderSide: BorderSide.none),
                         disabledBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(20),
+                          borderRadius: BorderRadius.circular(10),
                           borderSide: const BorderSide(
                             color: Colors.black45,
                             width: 10,
                           ),
                         ),
                         focusedBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(20),
+                          borderRadius: BorderRadius.circular(10),
                           borderSide: BorderSide.none,
                         ),
                       ),
@@ -111,24 +118,24 @@ class _CalenderPeriodState extends State<CalenderPeriod> {
                   ),
                   Container(
                     decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(20),
-                        color: Colors.white),
+                        borderRadius: BorderRadius.circular(10),
+                        color: Color(0xdad2ced0)),
                     child: TextField(
                       decoration: InputDecoration(
                         hintText: 'How many days of your period',
                         prefixIcon: Icon(Icons.drive_file_rename_outline),
                         enabledBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(20),
+                            borderRadius: BorderRadius.circular(10),
                             borderSide: BorderSide.none),
                         disabledBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(20),
+                          borderRadius: BorderRadius.circular(10),
                           borderSide: const BorderSide(
                             color: Colors.black45,
                             width: 10,
                           ),
                         ),
                         focusedBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(20),
+                          borderRadius: BorderRadius.circular(10),
                           borderSide: BorderSide.none,
                         ),
                       ),
@@ -139,24 +146,24 @@ class _CalenderPeriodState extends State<CalenderPeriod> {
                   ),
                   Container(
                     decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(20),
-                        color: Colors.white),
+                        borderRadius: BorderRadius.circular(10),
+                        color: Color(0xdad2ced0)),
                     child: TextField(
                       decoration: InputDecoration(
                         hintText: 'Describe menstrual color',
                         prefixIcon: Icon(Icons.description),
                         enabledBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(20),
+                            borderRadius: BorderRadius.circular(10),
                             borderSide: BorderSide.none),
                         disabledBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(20),
+                          borderRadius: BorderRadius.circular(10),
                           borderSide: const BorderSide(
                             color: Colors.black45,
                             width: 10,
                           ),
                         ),
                         focusedBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(20),
+                          borderRadius: BorderRadius.circular(10),
                           borderSide: BorderSide.none,
                         ),
                       ),
@@ -167,18 +174,20 @@ class _CalenderPeriodState extends State<CalenderPeriod> {
                   ),
                   MaterialButton(
                     elevation: 5.0,
-                    color: Color(0xffffffff),
+                    color: Color(0xffF8CAE4),
                     padding: const EdgeInsets.symmetric(
-                        vertical: 20, horizontal: 80),
+                        vertical: 17, horizontal: 150),
                     shape: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(20),
+                      borderRadius: BorderRadius.circular(10),
                       borderSide: BorderSide.none,
                     ),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.of(context).pushNamed(HomeScreen.routeName);
+                    },
                     child: const Text(
                       'Submit',
                       style: TextStyle(
-                        color: Colors.black54,
+                        color: Colors.white,
                         fontSize: 22,
                         fontWeight: FontWeight.bold,
                       ),
@@ -186,7 +195,7 @@ class _CalenderPeriodState extends State<CalenderPeriod> {
                   ),
                 ],
               ),
-            ]))));
+            )));
   }
 
   void showCalender() async {
