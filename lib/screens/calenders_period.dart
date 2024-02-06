@@ -182,7 +182,8 @@ class _CalenderPeriodState extends State<CalenderPeriod> {
                       borderSide: BorderSide.none,
                     ),
                     onPressed: () {
-                      Navigator.of(context).pushNamed(HomeScreen.routeName);
+                      Navigator.of(context)
+                          .pushReplacementNamed(HomeScreen.routeName);
                     },
                     child: const Text(
                       'Submit',
