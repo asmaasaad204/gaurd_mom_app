@@ -63,7 +63,7 @@ class _HomeTapState extends State<HomeTap> {
               left: 260,
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                    primary: Color(0xffc9bdc6),
+                    primary: Color(0xffe13495),
                     onPrimary: Colors.white,
                     padding: EdgeInsets.only(
                         right: 20, left: 20, top: 12, bottom: 12),
@@ -73,7 +73,7 @@ class _HomeTapState extends State<HomeTap> {
                   Navigator.of(context).pushNamed(CheckUpScreen.routeName);
                 },
                 child: Text(
-                  "CheckUp",
+                  " CheckUp",
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 20,
