@@ -179,7 +179,7 @@ class LoginScreen extends StatelessWidget {
                               child: Text(
                                 'Sign Up',
                                 style: TextStyle(
-                                    color: Color(0xffF8CAE4),
+                                    color: Color(0xffe13495),
                                     fontSize: 22,
                                     fontWeight: FontWeight.bold),
                               ),

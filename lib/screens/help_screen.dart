@@ -27,7 +27,7 @@ class GetHelp extends StatelessWidget {
         Column(
           children: [
             Padding(
-              padding: const EdgeInsets.only(top: 30, left: 30),
+              padding: const EdgeInsets.only(top: 220, left: 30),
               child: Text(
                 "Is there any problem",
                 textAlign: TextAlign.center,
@@ -55,9 +55,9 @@ class GetHelp extends StatelessWidget {
               padding: const EdgeInsets.only(right: 8, top: 8, left: 40),
               child: MaterialButton(
                 elevation: 5.0,
-                color: Color(0xffb0a3ab),
+                color: Color(0xffF8CAE4),
                 padding:
-                const EdgeInsets.symmetric(vertical: 20, horizontal: 80),
+                    const EdgeInsets.symmetric(vertical: 20, horizontal: 80),
                 shape: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(10),
                   borderSide: BorderSide.none,
@@ -97,9 +97,9 @@ class GetHelp extends StatelessWidget {
               padding: const EdgeInsets.only(right: 8, top: 8, left: 40),
               child: MaterialButton(
                   elevation: 5.0,
-                  color: Color(0xffb0a3ab),
+                  color: Color(0xffF8CAE4),
                   padding:
-                  const EdgeInsets.symmetric(vertical: 20, horizontal: 20),
+                      const EdgeInsets.symmetric(vertical: 20, horizontal: 20),
                   shape: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(10),
                     borderSide: BorderSide.none,

@@ -80,39 +80,39 @@ class _CalenderPeriodState extends State<CalenderPeriod> {
                       ),
                     ),
                   ),
-                  const SizedBox(
-                    height: 20,
-                  ),
-                  Container(
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10),
-                        color: Color(0xdad2ced0)),
-                    child: TextField(
-                      decoration: InputDecoration(
-                        hintText:
-                            '${selectedDate.day}/${selectedDate.month}/${selectedDate.year}',
-                        prefixIcon: InkWell(
-                            onTap: () {
-                              showCalender();
-                            },
-                            child: Icon(Icons.date_range)),
-                        enabledBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10),
-                            borderSide: BorderSide.none),
-                        disabledBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(10),
-                          borderSide: const BorderSide(
-                            color: Colors.black45,
-                            width: 10,
-                          ),
-                        ),
-                        focusedBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(10),
-                          borderSide: BorderSide.none,
-                        ),
-                      ),
-                    ),
-                  ),
+                  // const SizedBox(
+                  //   height: 20,
+                  // ),
+                  // Container(
+                  //   decoration: BoxDecoration(
+                  //       borderRadius: BorderRadius.circular(10),
+                  //       color: Color(0xdad2ced0)),
+                  //   child: TextField(
+                  //     decoration: InputDecoration(
+                  //       hintText:
+                  //           '${selectedDate.day}/${selectedDate.month}/${selectedDate.year}',
+                  //       prefixIcon: InkWell(
+                  //           onTap: () {
+                  //             showCalender();
+                  //           },
+                  //           child: Icon(Icons.date_range)),
+                  //       enabledBorder: OutlineInputBorder(
+                  //           borderRadius: BorderRadius.circular(10),
+                  //           borderSide: BorderSide.none),
+                  //       disabledBorder: OutlineInputBorder(
+                  //         borderRadius: BorderRadius.circular(10),
+                  //         borderSide: const BorderSide(
+                  //           color: Colors.black45,
+                  //           width: 10,
+                  //         ),
+                  //       ),
+                  //       focusedBorder: OutlineInputBorder(
+                  //         borderRadius: BorderRadius.circular(10),
+                  //         borderSide: BorderSide.none,
+                  //       ),
+                  //     ),
+                  //   ),
+                  // ),
                   const SizedBox(
                     height: 20,
                   ),

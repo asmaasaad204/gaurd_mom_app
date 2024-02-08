@@ -17,14 +17,14 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: selectedIndex,
-        selectedItemColor: Color(0xffF8CAE4),
+        selectedItemColor: Color(0xffe13495),
         onTap: (index) {
           selectedIndex = index;
           setState(() {});
         },
         items: [
           BottomNavigationBarItem(
-            activeIcon: Icon(Icons.home, color: Color(0xffF8CAE4)),
+            activeIcon: Icon(Icons.home, color: Color(0xffe13495)),
             icon: Icon(
               Icons.home,
               color: Colors.grey,
@@ -33,23 +33,23 @@ class _HomeScreenState extends State<HomeScreen> {
             backgroundColor: Color(0xffccbbc1),
           ),
           BottomNavigationBarItem(
-              activeIcon: Icon(Icons.login, color: Color(0xffF8CAE4)),
+              activeIcon: Icon(Icons.login, color: Color(0xffe13495)),
               icon: Icon(
                 Icons.login,
                 color: Colors.grey,
               ),
               label: 'Login'),
           BottomNavigationBarItem(
-              activeIcon: Icon(Icons.list_sharp, color: Color(0xffF8CAE4)),
+              activeIcon: Icon(Icons.list_sharp, color: Color(0xffe13495)),
               icon: Icon(
                 Icons.list_sharp,
                 color: Colors.grey,
               ),
               label: 'Pages'),
         ],
-        selectedLabelStyle: TextStyle(color: Color(0xffF8CAE4)),
+        selectedLabelStyle: TextStyle(color: Color(0xffe13495)),
       ),
-      backgroundColor: Color(0xffFEE1E1),
+      backgroundColor: Color(0xffe13495),
       body: tabs[selectedIndex],
     );
   }

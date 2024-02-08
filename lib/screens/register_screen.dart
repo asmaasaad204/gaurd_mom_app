@@ -288,9 +288,9 @@ class _RegisterScreenState extends State<RegisterScreen> {
                               .pushReplacementNamed(LoginScreen.routeName);
                         },
                         child: Text(
-                          'LOGIN',
+                          'Login',
                           style: TextStyle(
-                              color: Color(0xffF8CAE4),
+                              color: Color(0xffe13495),
                               fontSize: 21,
                               fontWeight: FontWeight.bold),
                         ),

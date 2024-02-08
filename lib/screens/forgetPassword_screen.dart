@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '../home/home_screen.dart';
+import 'package:guard/screens/login_screen.dart';
 
 class ForgetPassword extends StatelessWidget {
   static const String routeName = 'forget password';
@@ -8,39 +7,62 @@ class ForgetPassword extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xffF20C7F),
+      backgroundColor: Colors.white,
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(300),
+        child: AppBar(
+          elevation: 0,
+          backgroundColor: Colors.transparent,
+          scrolledUnderElevation: 20,
+          flexibleSpace: Container(
+            child: Stack(
+              children: [
+                Image.asset(
+                  "assets/images/photo_logiin9.jpg",
+                  fit: BoxFit.cover,
+                ),
+                Padding(
+                  padding:
+                      const EdgeInsets.only(top: 120, right: 120, left: 20),
+                  child: Image.asset(
+                    "assets/images/photo_logoGuuard2.jpg",
+                    width: 200,
+                    height: 100,
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
       body: Column(
         children: [
           Padding(
-            padding: const EdgeInsets.only(left: 17, top: 50),
-            child: Image.asset(
-              'assets/images/logo2.png',
-              width: 240,
-              height: 100,
+            padding: const EdgeInsets.only(
+              left: 8,
+              right: 8,
+              top: 30,
             ),
-          ),
-          SizedBox(height: 180),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
             child: Container(
               decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20), color: Colors.white),
+                  borderRadius: BorderRadius.circular(10),
+                  color: Color(0xdad2ced0)),
               child: TextField(
                 decoration: InputDecoration(
                   hintText: 'Email or Phone',
                   prefixIcon: const Icon(Icons.email),
                   enabledBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(20),
+                      borderRadius: BorderRadius.circular(10),
                       borderSide: BorderSide.none),
                   disabledBorder: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(20),
+                    borderRadius: BorderRadius.circular(10),
                     borderSide: const BorderSide(
                       color: Colors.black45,
                       width: 10,
                     ),
                   ),
                   focusedBorder: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(20),
+                    borderRadius: BorderRadius.circular(10),
                     borderSide: BorderSide.none,
                   ),
                 ),
@@ -48,23 +70,23 @@ class ForgetPassword extends StatelessWidget {
             ),
           ),
           const SizedBox(
-            height: 30,
+            height: 25,
           ),
           MaterialButton(
             elevation: 5.0,
-            color: Color(0xffffffff),
-            padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 80),
+            color: Color(0xffF8CAE4),
+            padding: const EdgeInsets.symmetric(vertical: 17, horizontal: 170),
             shape: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(25),
+              borderRadius: BorderRadius.circular(10),
               borderSide: BorderSide.none,
             ),
             onPressed: () {
-              Navigator.of(context).pushReplacementNamed(HomeScreen.routeName);
+              Navigator.of(context).pushReplacementNamed(LoginScreen.routeName);
             },
             child: const Text(
               'Send',
               style: TextStyle(
-                color: Colors.black54,
+                color: Colors.white,
                 fontSize: 22,
                 fontWeight: FontWeight.bold,
               ),
