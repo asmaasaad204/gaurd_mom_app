@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:guard/screens/instructions.dart';
+import 'package:guard/screens/diagnosis.dart';
 import 'package:guard/screens/risk_factors_screen.dart';
 import 'package:guard/screens/success_screen.dart';
 
@@ -125,7 +125,7 @@ class _HomeTapState extends State<HomeTap> {
                         child: InkWell(
                           onTap: () {
                             Navigator.of(context)
-                                .pushNamed(InstructionsScreen.routeName);
+                                .pushNamed(TreatmentScreen.routeName);
                           },
                           child: Column(
                             children: [
@@ -145,7 +145,7 @@ class _HomeTapState extends State<HomeTap> {
                               Padding(
                                 padding: const EdgeInsets.all(8.0),
                                 child: Text(
-                                  "Other Resources",
+                                  "Diagnosis",
                                   style: TextStyle(
                                     fontSize: 15,
                                   ),
