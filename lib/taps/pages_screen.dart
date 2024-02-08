@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:guard/screens/about_us.dart';
 import 'package:guard/screens/calenders_period.dart';
 import 'package:guard/screens/help_screen.dart';
 import 'package:guard/screens/login_screen.dart';
@@ -112,7 +111,7 @@ class PagesScreen extends StatelessWidget {
             InkWell(
               onTap: () {
                 ///about us
-                Navigator.of(context).pushNamed(AboutUs.routeName);
+                // Navigator.of(context).pushNamed(AboutUs.routeName);
               },
               child: Padding(
                 padding: const EdgeInsets.all(8.0),

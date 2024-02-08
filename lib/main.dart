@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:guard/screens/about_us.dart';
 import 'package:guard/screens/begin_screen.dart';
 import 'package:guard/screens/calenders_period.dart';
 import 'package:guard/screens/checkup_screen.dart';
@@ -36,7 +35,7 @@ class MyApp extends StatelessWidget {
         CalenderPeriod.routeName: (context) => CalenderPeriod(),
         DiagnosisScreen.routeName: (context) => DiagnosisScreen(),
         PagesScreen.routeName: (context) => PagesScreen(),
-        AboutUs.routeName: (context) => AboutUs(),
+        // AboutUs.routeName: (context) => AboutUs(),
         ContactUsScreen.routeName: (context) => ContactUsScreen(),
         GetHelp.routeName: (context) => GetHelp(),
         Settings.routeName: (context) => Settings(),
