@@ -34,7 +34,7 @@ class MyApp extends StatelessWidget {
         CheckUpScreen.routeName: (context) => CheckUpScreen(),
         SuccessScreen.routeName: (context) => SuccessScreen(),
         CalenderPeriod.routeName: (context) => CalenderPeriod(),
-        TreatmentScreen.routeName: (context) => TreatmentScreen(),
+        DiagnosisScreen.routeName: (context) => DiagnosisScreen(),
         PagesScreen.routeName: (context) => PagesScreen(),
         AboutUs.routeName: (context) => AboutUs(),
         ContactUsScreen.routeName: (context) => ContactUsScreen(),

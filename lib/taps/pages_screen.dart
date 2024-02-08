@@ -7,9 +7,9 @@ import 'package:guard/screens/register_screen.dart';
 import 'package:guard/screens/risk_factors_screen.dart';
 import 'package:guard/screens/settings.dart';
 import 'package:guard/taps/home_tap.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 import '../screens/contactUs_screen.dart';
+import '../screens/diagnosis.dart';
 
 class PagesScreen extends StatelessWidget {
   static const String routeName = 'pages screen';
@@ -43,11 +43,11 @@ class PagesScreen extends StatelessWidget {
                   height: 55,
                   child: Padding(
                     padding:
-                    const EdgeInsets.only(top: 10, bottom: 8, left: 10),
+                        const EdgeInsets.only(top: 10, bottom: 8, left: 10),
                     child: Text(
                       "Login",
                       style:
-                      TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+                          TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
                     ),
                   ),
                   decoration: BoxDecoration(
@@ -239,8 +239,9 @@ class PagesScreen extends StatelessWidget {
             ),
             InkWell(
               onTap: () {
-                ///other resources
-                showAlert(context);
+                ///Diagnosis
+                // showAlert(context);
+                Navigator.of(context).pushNamed(DiagnosisScreen.routeName);
               },
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
@@ -251,9 +252,9 @@ class PagesScreen extends StatelessWidget {
                     padding:
                     const EdgeInsets.only(top: 10, bottom: 8, left: 10),
                     child: Text(
-                      "Other Resources",
+                      "Diagnosis",
                       style:
-                      TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+                          TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
                     ),
                   ),
                   decoration: BoxDecoration(
@@ -295,44 +296,43 @@ class PagesScreen extends StatelessWidget {
       ),
     );
   }
-
-  void showAlert(BuildContext context) {
-    showDialog(
-      context: context,
-      builder: (BuildContext context) {
-        return AlertDialog(
-          title: Text('Connect with another source'),
-          content: InkWell(
-              onTap: () {
-                launchUrl;
-              },
-              child: Text('https://baheya.org/')),
-          actions: <Widget>[
-            TextButton(
-              onPressed: () {
-                Navigator.of(context).pop();
-              },
-              child: Text(
-                'OK',
-                style: TextStyle(
-                  color: Color(0xffF20C7F),
-                  fontSize: 18,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-            ),
-          ],
-        );
-      },
-    );
-  }
-
-  launchURL() async {
-    const url = 'https://baheya.org/';
-    if (await canLaunch(url)) {
-      await launch(url);
-    } else {
-      throw 'Could not launch $url';
-    }
-  }
 }
+// void showAlert(BuildContext context) {
+//   showDialog(
+//     context: context,
+//     builder: (BuildContext context) {
+//       return AlertDialog(
+//         title: Text('Connect with another source'),
+//         content: InkWell(
+//             onTap: () {
+//               launchUrl;
+//             },
+//             child: Text('https://baheya.org/')),
+//         actions: <Widget>[
+//           TextButton(
+//             onPressed: () {
+//               Navigator.of(context).pop();
+//             },
+//             child: Text(
+//               'OK',
+//               style: TextStyle(
+//                 color: Color(0xffF20C7F),
+//                 fontSize: 18,
+//                 fontWeight: FontWeight.bold,
+//               ),
+//             ),
+//           ),
+//         ],
+//       );
+//     },
+//   );
+// }
+
+// launchURL() async {
+//   const url = 'https://baheya.org/';
+//   if (await canLaunch(url)) {
+//     await launch(url);
+//   } else {
+//     throw 'Could not launch $url';
+//   }
+// }

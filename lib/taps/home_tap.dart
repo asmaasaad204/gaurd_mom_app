@@ -125,7 +125,7 @@ class _HomeTapState extends State<HomeTap> {
                         child: InkWell(
                           onTap: () {
                             Navigator.of(context)
-                                .pushNamed(TreatmentScreen.routeName);
+                                .pushNamed(DiagnosisScreen.routeName);
                           },
                           child: Column(
                             children: [

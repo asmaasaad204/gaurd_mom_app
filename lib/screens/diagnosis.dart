@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class TreatmentScreen extends StatelessWidget {
+class DiagnosisScreen extends StatelessWidget {
   static const String routeName = 'Diagnosis';
 
   @override
