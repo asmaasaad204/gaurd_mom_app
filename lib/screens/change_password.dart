@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:guard/screens/change_password.dart';
 
-class ForgetPassword extends StatelessWidget {
-  static const String routeName = 'forget password';
+import 'login_screen.dart';
+
+class ChangePassword extends StatelessWidget {
+  static const String routeName = ' change password';
 
   @override
   Widget build(BuildContext context) {
@@ -37,20 +38,17 @@ class ForgetPassword extends StatelessWidget {
       ),
       body: Column(
         children: [
+          SizedBox(height: 25),
           Padding(
-            padding: const EdgeInsets.only(
-              left: 8,
-              right: 8,
-              top: 30,
-            ),
+            padding: const EdgeInsets.all(8.0),
             child: Container(
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
                   color: Color(0xdad2ced0)),
               child: TextField(
                 decoration: InputDecoration(
-                  hintText: 'Email or Phone',
-                  prefixIcon: const Icon(Icons.email),
+                  hintText: 'Change password',
+                  prefixIcon: const Icon(Icons.password),
                   enabledBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(10),
                       borderSide: BorderSide.none),
@@ -58,7 +56,36 @@ class ForgetPassword extends StatelessWidget {
                     borderRadius: BorderRadius.circular(10),
                     borderSide: const BorderSide(
                       color: Colors.black45,
-                      width: 10,
+                      width: 20,
+                    ),
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(10),
+                    borderSide: BorderSide.none,
+                  ),
+                ),
+              ),
+            ),
+          ),
+          SizedBox(height: 7),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  color: Color(0xdad2ced0)),
+              child: TextField(
+                decoration: InputDecoration(
+                  hintText: 'Confirm password',
+                  prefixIcon: const Icon(Icons.password),
+                  enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10),
+                      borderSide: BorderSide.none),
+                  disabledBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(10),
+                    borderSide: const BorderSide(
+                      color: Colors.black45,
+                      width: 20,
                     ),
                   ),
                   focusedBorder: OutlineInputBorder(
@@ -70,7 +97,7 @@ class ForgetPassword extends StatelessWidget {
             ),
           ),
           const SizedBox(
-            height: 25,
+            height: 20,
           ),
           MaterialButton(
             elevation: 5.0,
@@ -81,8 +108,7 @@ class ForgetPassword extends StatelessWidget {
               borderSide: BorderSide.none,
             ),
             onPressed: () {
-              Navigator.of(context)
-                  .pushReplacementNamed(ChangePassword.routeName);
+              Navigator.of(context).pushReplacementNamed(LoginScreen.routeName);
             },
             child: const Text(
               'Send',
